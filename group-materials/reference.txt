@@ -3,4 +3,4 @@ Shared note
 Github repos:
 Twilio w/ Swift example: https://github.com/TwilioDevEd/chat-quickstart-swift
 
-Twilio phone number: 2156083516
+Twilio phone number: +12156082234
