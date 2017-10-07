@@ -1,0 +1,6 @@
+install flask for python twill server:
+pip3 install flask
+
+
+twilio api:
+pip3 install twilio
