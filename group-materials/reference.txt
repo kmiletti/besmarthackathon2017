@@ -3,4 +3,10 @@ Shared note
 Github repos:
 Twilio w/ Swift example: https://github.com/TwilioDevEd/chat-quickstart-swift
 
-Twilio phone number: +12156082234
+Twilio:
+phone number: +12156082234
+sid: SK98a1a4484650dd2bdf94c41b2c887803
+secret: 9CTlNLqVZUt1IN6KN21XZ3YXIoWqvjMs
+
+Resources:
+https://www.twilio.com/blog/2016/11/how-to-send-an-sms-from-ios-in-swift.html
