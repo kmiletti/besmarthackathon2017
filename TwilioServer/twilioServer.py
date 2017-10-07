@@ -10,7 +10,7 @@ AUTH_TOKEN = '046d72ba4056daa49f20088e8eee9bf6'
 
 client = Client(ACCOUNT_SID, AUTH_TOKEN)
 
-@app.route('/sms', methods=['POST'])
+@app.route('/', methods=['POST'])
 def send_sms():
     message = client.messages.create(to=request.form['To'], from_='+12156082234', body=request.form['Body'])
     return message.sid
