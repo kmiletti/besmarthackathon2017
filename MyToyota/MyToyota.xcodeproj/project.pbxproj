@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79735CE1877D1DE934F9DE31 /* Pods_MyToyota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */; };
 		AC6ACB3F1F895AC4007417F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACB3E1F895AC4007417F4 /* AppDelegate.swift */; };
 		AC6ACB411F895AC4007417F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACB401F895AC4007417F4 /* ViewController.swift */; };
 		AC6ACB441F895AC4007417F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC6ACB421F895AC4007417F4 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToyota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B820ABD2C8E27FADB1B9524 /* Pods-MyToyota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToyota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6ACB3B1F895AC4007417F4 /* MyToyota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToyota.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6ACB3E1F895AC4007417F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC6ACB401F895AC4007417F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,7 @@
 		AC6ACB5A1F895AC4007417F4 /* MyToyotaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyToyotaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC6ACB5E1F895AC4007417F4 /* MyToyotaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyToyotaUITests.swift; sourceTree = "<group>"; };
 		AC6ACB601F895AC4007417F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33EBAFD3D7BA07B17BEC825 /* Pods-MyToyota.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToyota.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79735CE1877D1DE934F9DE31 /* Pods_MyToyota.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D5E58F0D5F44708078C4E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40E75AA6CFAC4F063A1DE27C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B820ABD2C8E27FADB1B9524 /* Pods-MyToyota.debug.xcconfig */,
+				E33EBAFD3D7BA07B17BEC825 /* Pods-MyToyota.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AC6ACB321F895AC4007417F4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				AC6ACB521F895AC4007417F4 /* MyToyotaTests */,
 				AC6ACB5D1F895AC4007417F4 /* MyToyotaUITests */,
 				AC6ACB3C1F895AC4007417F4 /* Products */,
+				40E75AA6CFAC4F063A1DE27C /* Pods */,
+				0D5E58F0D5F44708078C4E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC6ACB631F895AC4007417F4 /* Build configuration list for PBXNativeTarget "MyToyota" */;
 			buildPhases = (
+				536BDC96320225C0984FE69C /* [CP] Check Pods Manifest.lock */,
 				AC6ACB371F895AC4007417F4 /* Sources */,
 				AC6ACB381F895AC4007417F4 /* Frameworks */,
 				AC6ACB391F895AC4007417F4 /* Resources */,
+				EDA9A0C4F4ACC2153820A9DB /* [CP] Embed Pods Frameworks */,
+				D99440A82EDC1039FFC6FE9E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +280,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		536BDC96320225C0984FE69C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyToyota-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99440A82EDC1039FFC6FE9E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDA9A0C4F4ACC2153820A9DB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC6ACB371F895AC4007417F4 /* Sources */ = {
@@ -424,13 +505,14 @@
 		};
 		AC6ACB641F895AC4007417F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B820ABD2C8E27FADB1B9524 /* Pods-MyToyota.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W56AAY5GQU;
+				DEVELOPMENT_TEAM = L8RMCCPV5X;
 				INFOPLIST_FILE = MyToyota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = beSmart.MyToyota;
+				PRODUCT_BUNDLE_IDENTIFIER = MyToyota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -439,13 +521,14 @@
 		};
 		AC6ACB651F895AC4007417F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E33EBAFD3D7BA07B17BEC825 /* Pods-MyToyota.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W56AAY5GQU;
+				DEVELOPMENT_TEAM = L8RMCCPV5X;
 				INFOPLIST_FILE = MyToyota/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = beSmart.MyToyota;
+				PRODUCT_BUNDLE_IDENTIFIER = MyToyota;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
