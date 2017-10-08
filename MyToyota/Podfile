@@ -8,5 +8,8 @@ target 'MyToyota' do
   # Pods for MyToyota
 
   pod 'Alamofire', '~> 4.0.1'
+  pod "FlexibleSteppedProgressBar"
+  pod 'QRCodeReader.swift', '~> 8.0.3'
+
 
 end

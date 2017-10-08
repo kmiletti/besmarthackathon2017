@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261189981F8A058A009870E7 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261189971F8A058A009870E7 /* QRViewController.swift */; };
+		2611899C1F8A1698009870E7 /* SecondQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611899B1F8A1698009870E7 /* SecondQRViewController.swift */; };
 		79735CE1877D1DE934F9DE31 /* Pods_MyToyota.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */; };
 		AC6ACB3F1F895AC4007417F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACB3E1F895AC4007417F4 /* AppDelegate.swift */; };
 		AC6ACB411F895AC4007417F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6ACB401F895AC4007417F4 /* ViewController.swift */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		261189971F8A058A009870E7 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		2611899B1F8A1698009870E7 /* SecondQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondQRViewController.swift; sourceTree = "<group>"; };
+		26FC21AB1F89F63C0076B4B3 /* EFQRCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EFQRCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyToyota.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B820ABD2C8E27FADB1B9524 /* Pods-MyToyota.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyToyota.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota.debug.xcconfig"; sourceTree = "<group>"; };
 		AC6ACB3B1F895AC4007417F4 /* MyToyota.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyToyota.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +87,7 @@
 		0D5E58F0D5F44708078C4E69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26FC21AB1F89F63C0076B4B3 /* EFQRCode.framework */,
 				7178A8383F9CDCB9EFFF680B /* Pods_MyToyota.framework */,
 			);
 			name = Frameworks;
@@ -127,6 +133,8 @@
 				AC6ACB451F895AC4007417F4 /* Assets.xcassets */,
 				AC6ACB471F895AC4007417F4 /* LaunchScreen.storyboard */,
 				AC6ACB4A1F895AC4007417F4 /* Info.plist */,
+				261189971F8A058A009870E7 /* QRViewController.swift */,
+				2611899B1F8A1698009870E7 /* SecondQRViewController.swift */,
 			);
 			path = MyToyota;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 				AC6ACB391F895AC4007417F4 /* Resources */,
 				EDA9A0C4F4ACC2153820A9DB /* [CP] Embed Pods Frameworks */,
 				D99440A82EDC1039FFC6FE9E /* [CP] Copy Pods Resources */,
+				26FC21AD1F89F6960076B4B3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -282,6 +291,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26FC21AD1F89F6960076B4B3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/EFQRCode.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		536BDC96320225C0984FE69C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -323,10 +346,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MyToyota/Pods-MyToyota-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FlexibleSteppedProgressBar/FlexibleSteppedProgressBar.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexibleSteppedProgressBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -341,7 +368,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC6ACB411F895AC4007417F4 /* ViewController.swift in Sources */,
+				2611899C1F8A1698009870E7 /* SecondQRViewController.swift in Sources */,
 				AC6ACB3F1F895AC4007417F4 /* AppDelegate.swift in Sources */,
+				261189981F8A058A009870E7 /* QRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

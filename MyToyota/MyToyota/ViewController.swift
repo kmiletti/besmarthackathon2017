@@ -8,8 +8,10 @@
 
 import UIKit
 import Alamofire
+import FlexibleSteppedProgressBar
+import AVFoundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
 
     @IBOutlet weak var phoneNumberField: UITextField!
     @IBOutlet weak var messageField: UITextField!
@@ -34,9 +36,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-
 
 }
+
+
 
