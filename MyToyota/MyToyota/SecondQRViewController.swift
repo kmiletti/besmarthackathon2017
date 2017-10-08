@@ -31,8 +31,7 @@ class SecondQRViewController: UIViewController {
         // Or by using the closure pattern
         readerVC.completionBlock = { (result: QRCodeReaderResult?) in
             print(result)
-            //UIApplication.shared.openURL(URL(string: (result?.value)!)!)
-            performSegueWithIdentifier("TheRedPillExperience", sender: self)
+            UIApplication.shared.openURL(URL(string: (result?.value)!)!)
             print("Hello")
         }
         
